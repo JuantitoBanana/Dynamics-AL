@@ -5,6 +5,7 @@ page 50100 "Vehicle List"
     UsageCategory = Lists;
     SourceTable = Vehicle;
     SourceTableView = sorting("Date of Manufactoring", Transmission) order(descending);
+    Caption = 'Lista de vehículos';
 
     layout
     {
@@ -14,31 +15,37 @@ page 50100 "Vehicle List"
             {
                 field(Model; Rec.Model)
                 {
+                    Caption = 'Modelo';
                     ApplicationArea = All;
                 }
 
                 field("Serial NO."; Rec."Serial NO.")
                 {
+                    Caption = 'Número de serie';
                     ApplicationArea = All;
                 }
 
                 field(Description; Rec.Description)
                 {
+                    Caption = 'Descripción';
                     ApplicationArea = All;
                 }
 
                 field(Transmission; Rec.Transmission)
                 {
+                    Caption = 'Transmisión';
                     ApplicationArea = All;
                 }
 
                 field("List Price"; Rec."List Price")
                 {
+                    Caption = 'Precios';
                     ApplicationArea = All;
                 }
 
                 field("Date of Manufactoring"; Rec."Date of Manufactoring")
                 {
+                    Caption = 'Fecha de fabricación';
                     ApplicationArea = All;
                 }
             }
